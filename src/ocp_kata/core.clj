@@ -1,6 +1,5 @@
 (ns ocp-kata.core)
 
-(defn foo
-  "I don't do a whole lot."
+(defn say
   [x]
-  (println x "Hello, World!"))
+  (str x))
