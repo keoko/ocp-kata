@@ -13,3 +13,7 @@
 (deftest test-say-buzz
   (testing "When a number is multiple of 5, say 'Buzz'"
     (is (every? #(= "Buzz" %) (map say [5 10])))))
+
+(deftest test-say-fizzbuzz
+  (testing "When a number is multiple of 3 and  5, say 'FizzBuzz'"
+    (is (every? #(= "FizzBuzz" %) (map say [15 30])))))

@@ -24,3 +24,4 @@
   [x]
   (when (is-a-multiple-of? 5 x)
     "Buzz"))
+
