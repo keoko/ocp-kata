@@ -2,10 +2,14 @@
   (:require [clojure.test :refer :all]
             [ocp-kata.core :refer :all]))
 
-(deftest say-the-number
+(deftest test-say-the-number
   (testing "Just say the number"
-    (is (= ["1" "2" "4" "5"] (map say [1 2 4 5])))))
+    (is (= ["1" "2" "4" "7"] (map say [1 2 4 7])))))
 
-(deftest say-fizz
+(deftest test-say-fizz
   (testing "When a number is multiple of 3, say 'Fizz'"
     (is (every? #(= "Fizz" %) (map say [3 6 9])))))
+
+(deftest test-say-buzz
+  (testing "When a number is multiple of 5, say 'Buzz'"
+    (is (every? #(= "Buzz" %) (map say [5 10])))))
