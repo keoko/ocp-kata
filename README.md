@@ -1,10 +1,10 @@
 # ocp-kata
 
-A Clojure library designed to ... well, that part is up to you.
+Open/CLosed FizzBuzz kata in clojure.
 
 ## Usage
 
-FIXME
+More information about this kata in https://github.com/xpmatteo/ocp-kata/blob/master/ocp-dojo.pdf
 
 ## License
 
