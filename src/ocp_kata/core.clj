@@ -1,11 +1,11 @@
 (ns ocp-kata.core)
 
 
-(declare say-fizz say-buzz)
+(declare say-fizz say-buzz say-bang)
 
-(def say-rules [say-fizz say-buzz])
+(def say-rules [say-fizz say-buzz say-bang])
 
-(defn is-a-multiple-of? 
+(defn is-a-multiple-of?  
   [x y] 
   (= 0 (mod y x)))
 
@@ -24,4 +24,9 @@
   [x]
   (when (is-a-multiple-of? 5 x)
     "Buzz"))
+
+(defn say-bang
+  [x]
+  (when (is-a-multiple-of? 7 x)
+    "Bang"))
 
